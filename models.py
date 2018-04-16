@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import datetime
-from django.core.signals import request_finished
 from django.db import models
 from django.utils.text import slugify
 
