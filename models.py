@@ -3,33 +3,7 @@ import datetime
 from django.db import models
 from django.utils.text import slugify
 
-CHOOSE_TIPO_CONTENT = (
-    ('', 'Informe um tipo de conteúdo'),
-    ('ATPagina', 'Páginas'),
-    ('ATNoticia', 'Notícias'),
-    ('ATInforme', 'Informes'),
-    ('ATLink', 'Links'),
-    ('ATImagem', 'Imagens'),
-    ('ATBanner', 'Banners'),
-    ('ATEvento', 'Eventos'),
-    ('ATAgenda', 'Agendas'),
-    ('ATArquivo', 'Arquivo'),
-)
-
-CHOOSE_WORKFLOW = (
-    ('Privado', 'Privado'),
-    ('Publicado', 'Publicado'),
-)
-
-CHOOSE_CATEGORIA = {
-    ('privado', 'Privado'),
-    ('publico', 'Publico')
-}
-
-CHOOSE_STATUS = (
-    (False, 'Bloqueado'),
-    (True, 'Habilitado'),
-)
+from databases.constants import CHOOSE_STATUS, CHOOSE_CATEGORIA, CHOOSE_TIPO_CONTENT
 
 
 class Site(models.Model):
