@@ -40,7 +40,7 @@ class Site(models.Model):
 
     @property
     def get_configure_url(self):
-        return '/%s/configure/' % self.url
+        return '/manage/sites/%s/' % self.url
 
     def get_absolute_url(self):
         return '/%s/' % self.url
